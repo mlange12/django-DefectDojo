@@ -56,9 +56,9 @@ steps:
     replaceExistingArchive: true
 
 - task: AzureRmWebAppDeployment@4
-inputs:
-ConnectionType: 'AzureRM'
-azureSubscription: 'INVID - Azure Sponsorship (496706af-0c61-4764-8863-75f295cf6c97)'
-appType: 'webApp'
-WebAppName: 'InvidTestApp'
-packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'INVID - Azure Sponsorship (496706af-0c61-4764-8863-75f295cf6c97)'
+    appType: 'webApp'
+    WebAppName: 'InvidTestApp'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
